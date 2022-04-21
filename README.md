@@ -9,7 +9,7 @@ The problem is modelled as a Vehicle Routing Problem and solved using [Gurobi](h
 ### Data Collection
 To obtain accurate information, we overlaid the bus stops data collected on STM on the Montreal’s road network provided by McGill library. We used OD Cost Matrix functionality in ArcMap for finding the shortest road distance between stops. The access to the latest road network data for Montreal was provided by McGill library. Since these were 8500 stops, this mapping generation took extensive time and generated a large .csv file of over 72 million records containing both time and distance mappings between stops, scope was limited to select bus-stops in Downtown.
 
-![Montreal Bus-stops](main/image_busstops.png)
+![Montreal Bus-stops](/image_busstops.png)
 
 ### Modelling
 This problem was modelled according to the mTSP approach in the [article](https://www.sciencedirect.com/science/article/abs/pii/S0305048304001550). Additionally, constraints were added to:
