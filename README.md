@@ -10,7 +10,7 @@ The problem is modelled as a Vehicle Routing Problem and solved using [Gurobi](h
 To obtain accurate information, we overlaid the bus stops data collected on STM on the Montreal’s road network provided by McGill library. We used OD Cost Matrix functionality in ArcMap for finding the shortest road distance between stops. The access to the latest road network data for Montreal was provided by McGill library. Since these were 8500 stops, this mapping generation took extensive time and generated a large .csv file of over 72 million records containing both time and distance mappings between stops, scope was limited to select bus-stops in Downtown.
 
 ### Modelling
-This problem was modelled according to the mTSP approach [highlighted](https://www.sciencedirect.com/science/article/abs/pii/S0305048304001550). Additionally, constraints were added to:
+This problem was modelled according to the mTSP approach in the [article](https://www.sciencedirect.com/science/article/abs/pii/S0305048304001550). Additionally, constraints were added to:
 - All buses to start from Bonaventure Station
 - One bus to visit the stops along Vieux-Port de Montréal
 - A single route must cover the direct route from St Antoine/ de la Cathédrale (53696) as it is the bus stop the nearest to the suburbs trains terminal to Decelles/ Queen Mary (51278) as it is near multiple large universities including HEC Montreal and Université de Montreal.
